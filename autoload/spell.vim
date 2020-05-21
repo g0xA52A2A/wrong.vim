@@ -1,10 +1,8 @@
-function! spell#Check(direction)
+function! spell#Check(forward)
   if !&l:spell
     setlocal spell
   endif
-  if a:direction ==# 'forward'
-    normal! ]s
-  elseif a:direction ==# 'backward'
-    normal! [s
-  endif
+
+  let motion = (a:forward) ? ']' : '['
+  execute 'normal!' motion . 's'
 endfunction
