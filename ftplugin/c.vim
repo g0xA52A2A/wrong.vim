@@ -1,4 +1,9 @@
-setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
-setlocal commentstring=/*%s*/
-setlocal makeprg=make
-setlocal path=.,/usr/include,,
+setlocal path&
+
+setlocal comments& commentstring&
+
+setlocal shiftwidth& softtabstop&
+setlocal expandtab& smarttab&
+
+setlocal makeprg&
+setlocal errorformat&
