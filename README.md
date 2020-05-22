@@ -18,9 +18,10 @@ behaviour, filetypes have no business touching this.
 
 ## Spell motions
 
-Don't require `spell` to be set for `]s` and `[s`. The user's intent to
-move to a spelling error is pretty clear, so throwing an error if spell
-is not set does not make for a good user experience.
+Don't require `spell` to be set for `]s`, `[s`, and `z=`. The user's
+intent to move to or correct a spelling error is pretty clear, so
+throwing an error if spell is not set does not make for a good user
+experience.
 
 ## Explicitly map `<CR>` in the quickfix window
 
