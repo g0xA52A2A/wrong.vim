@@ -3,6 +3,5 @@ function! spell#Check(forward)
     setlocal spell
   endif
 
-  let motion = (a:forward) ? ']' : '['
-  execute 'normal!' motion . 's'
+  execute 'normal!' a:forward ? ']s' : '[s'
 endfunction
